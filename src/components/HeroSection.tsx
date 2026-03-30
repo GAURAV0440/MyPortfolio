@@ -2,6 +2,9 @@ import { Mail, Download, Github, Linkedin } from "lucide-react";
 import heroIllustration from "@/assets/hero-illustration.png";
 
 const HeroSection = () => {
+  const socialIconClass =
+    "inline-flex items-center justify-center rounded-full p-2 text-muted-foreground transition-all duration-300 cursor-pointer hover:scale-110 hover:text-primary hover:shadow-[0_0_20px_hsl(var(--primary)/0.25)]";
+
   return (
     <section id="home" className="min-h-screen flex items-center section-padding pt-28">
       <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -42,13 +45,32 @@ const HeroSection = () => {
           </div>
 
           <div className="flex items-center gap-4 pt-2">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="https://github.com/GAURAV0440"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="GitHub"
+              aria-label="GitHub"
+              className={socialIconClass}
+            >
               <Github className="w-5 h-5" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="https://www.linkedin.com/in/gauravchawla001/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn"
+              aria-label="LinkedIn"
+              className={socialIconClass}
+            >
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="mailto:gaurav@example.com" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="mailto:gauravchawla147@gmail.com"
+              title="Email"
+              aria-label="Email"
+              className={socialIconClass}
+            >
               <Mail className="w-5 h-5" />
             </a>
           </div>

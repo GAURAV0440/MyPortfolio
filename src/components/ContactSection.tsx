@@ -3,10 +3,12 @@ import { Mail, Send, Github, Linkedin, Download } from "lucide-react";
 
 const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const socialIconClass =
+    "inline-flex items-center justify-center rounded-full p-2 text-muted-foreground transition-all duration-300 cursor-pointer hover:scale-110 hover:text-primary hover:shadow-[0_0_20px_hsl(var(--primary)/0.25)]";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailto = `mailto:gaurav@example.com?subject=Portfolio Contact from ${form.name}&body=${encodeURIComponent(form.message)}%0A%0AFrom: ${form.email}`;
+    const mailto = `mailto:gauravchawla147@gmail.com?subject=Portfolio Contact from ${form.name}&body=${encodeURIComponent(form.message)}%0A%0AFrom: ${form.email}`;
     window.open(mailto);
   };
 
@@ -67,13 +69,32 @@ const ContactSection = () => {
           </form>
 
           <div className="mt-6 pt-6 border-t border-border flex flex-wrap items-center justify-center gap-4">
-            <a href="mailto:gaurav@example.com" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="mailto:gauravchawla147@gmail.com"
+              title="Email"
+              aria-label="Email"
+              className={socialIconClass}
+            >
               <Mail className="w-5 h-5" />
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="https://github.com/GAURAV0440"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="GitHub"
+              aria-label="GitHub"
+              className={socialIconClass}
+            >
               <Github className="w-5 h-5" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="https://www.linkedin.com/in/gauravchawla001/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn"
+              aria-label="LinkedIn"
+              className={socialIconClass}
+            >
               <Linkedin className="w-5 h-5" />
             </a>
             <a href="#" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm text-foreground hover:border-primary/50 transition-colors">

@@ -17,11 +17,30 @@ const projects: Project[] = [
     link: "https://github.com/GAURAV0440",
   },
   {
-    title: "AI Chatbot (RAG System)",
-    description: "Built a retrieval-augmented generation chatbot combining vector search with LLM-powered answer synthesis for context-aware responses.",
-    features: ["RAG pipeline using embeddings", "FAISS vector search", "FastAPI real-time backend"],
-    tags: ["Python", "FastAPI", "FAISS", "HuggingFace", "RAG"],
-    link: "https://github.com/GAURAV0440",
+    title: "AI Assistant Chatbot (RAG System)",
+
+description: "Designed and implemented a Retrieval-Augmented Generation (RAG) chatbot using Gemini API and vector-based retrieval to generate context-aware, document-grounded responses with multi-personality interaction support.",
+
+features: [
+  "RAG pipeline with PDF ingestion using PyMuPDF",
+  "Semantic retrieval using embeddings for context-aware responses",
+  "Multi-personality conversational system via prompt orchestration",
+  "Session-based memory for maintaining conversational continuity",
+  "Multilingual interaction support (English + Hindi)"
+],
+
+tags: [
+  "Python",
+  "Streamlit",
+  "Gemini API",
+  "PyMuPDF",
+  "RAG",
+  "FAISS",
+  "FastAPI",
+  "Prompt Engineering"
+],
+
+link: "https://github.com/GAURAV0440/AI_Assistant"
   },
   {
     title: "AI Interviewer System",

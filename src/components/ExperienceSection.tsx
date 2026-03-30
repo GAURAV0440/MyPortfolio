@@ -10,36 +10,50 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    role: "AI Engineer",
-    company: "Hirewiser",
-    duration: "2025 – Present",
-    bullets: [
-      "Built an AI Interviewer using LLM orchestration with stateful agent workflows and multi-turn evaluation",
-      "Designed evaluation pipeline scoring correctness, depth, and clarity of candidate responses",
-      "Integrated FastAPI backend with real-time WebSocket communication for interview sessions",
-    ],
-    tags: ["LLM Orchestration", "FastAPI", "Agent Workflows", "WebSockets"],
-  },
+  role: "AI Engineer",
+  company: "Hirewiser",
+  duration: "May 2025 – Jan 2026",
+  bullets: [
+    "Built a production-ready AI Interviewer using LLM orchestration with stateful agent workflows, handling multi-turn conversations, adaptive questioning, and response evaluation",
+    "Designed evaluation pipeline using prompt engineering and structured scoring (correctness, depth, clarity) with dynamic follow-up question generation",
+    "Developed backend using FastAPI with WebSockets for real-time interview sessions, integrating LLM APIs (Gemini/OpenAI) and managing session state, memory, and API pipelines",
+  ],
+  tags: [
+    "Python", "FastAPI", "WebSockets", "LLM APIs (Gemini/OpenAI)",
+    "Agent Workflows", "LLM Orchestration", "Prompt Engineering",
+    "State Management", "RAG", "FAISS", "REST APIs"
+  ],
+},
   {
-    role: "AI/ML Intern",
-    company: "Insightloom",
-    duration: "2024 – 2025",
-    bullets: [
-      "Built Duoples — a multi-agent AI system with intelligent task routing via intent detection",
-      "Implemented multi-model fallback orchestration for robust, reliable AI responses",
-    ],
-    tags: ["Multi-Agent Systems", "Intent Detection", "Model Orchestration"],
-  },
+  role: "AI/ML Intern",
+  company: "Insightloom",
+  duration: "Jan 2025 – April 2025",
+  bullets: [
+    "Designed a multi-agent AI system using Python and FastAPI with intent detection to dynamically route tasks across chat, code, math, OCR, and image generation modules",
+    "Implemented multi-model orchestration across LLM APIs (Gemini, Groq, HuggingFace) with fallback chains, retry logic, and structured error handling for reliability",
+    "Built REST API-based backend and webhook-driven architecture for asynchronous task execution and real-time AI workflow processing",
+  ],
+  tags: [
+    "Python", "FastAPI", "LLM APIs (Gemini, Groq, HuggingFace)",
+    "Multi-Agent Systems", "Agent Orchestration", "Intent Detection",
+    "Webhooks", "Async Processing", "REST APIs", "Error Handling"
+  ],
+},
   {
-    role: "AI/ML Intern",
-    company: "Nullclass",
-    duration: "2024",
-    bullets: [
-      "Developed Chrome extension powered by LLM APIs for real-time content analysis",
-      "Architected event-driven system with async processing and webhook handling",
-    ],
-    tags: ["LLM APIs", "Event-Driven", "Async Processing", "Chrome Extension"],
-  },
+  role: "AI/ML Intern",
+  company: "NULLCLASS",
+  duration: "May 2024 – Nov 2024",
+  bullets: [
+    "Developed an AI-powered Chrome extension integrating LLM APIs to generate context-aware tab names and automate browser workflow optimization",
+    "Architected an event-driven system using JavaScript with asynchronous API handling, webhook-style triggers, and real-time response processing",
+    "Implemented LLM-based content understanding and classification logic to improve tab organization and user productivity",
+  ],
+  tags: [
+    "JavaScript", "Chrome Extension", "LLM APIs",
+    "Event-Driven Architecture", "Async Processing",
+    "Webhooks", "REST APIs"
+  ],
+},
 ];
 
 const ExperienceSection = () => {
