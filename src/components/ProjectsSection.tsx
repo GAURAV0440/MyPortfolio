@@ -9,15 +9,32 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
-    title: "Multi-Agent Knowledge Graph Search Engine",
-    description: "Engineered an autonomous multi-agent search system with specialized AI architecture for intelligent knowledge discovery.",
-    features: ["Agent-to-agent communication", "Knowledge graph + LLM reasoning", "Autonomous task execution"],
-    tags: ["Python", "LangChain", "Neo4j", "ChromaDB", "Gemini API"],
-    link: "https://github.com/GAURAV0440",
+    {
+  title: "AI Sleep Monitor (Real-Time Computer Vision System)",
+  
+  description: "Built a real-time computer vision system to detect drowsiness, yawning, and head-drop events using facial landmark analysis and behavioral signals from webcam input.",
+  
+  features: [
+    "Implemented Eye Aspect Ratio (EAR) for continuous drowsiness detection across video frames",
+    "Detected yawning using lip distance analysis from facial landmarks",
+    "Tracked head-drop events via nose position movement for fatigue monitoring",
+    "Designed multi-modal alert system with voice and toast notifications",
+    "Developed threaded PyQt5 GUI for smooth real-time processing and user interaction"
+  ],
+  
+  tags: [
+    "Python",
+    "OpenCV",
+    "MediaPipe",
+    "PyQt5",
+    "NumPy",
+    "Computer Vision"
+  ],
+  
+  link: "https://github.com/GAURAV0440/AI_Sleep_monitor"
   },
   {
-    title: "AI Assistant Chatbot (RAG System)",
+    title: "AI Assistant (RAG System)",
 
 description: "Designed and implemented a Retrieval-Augmented Generation (RAG) chatbot using Gemini API and vector-based retrieval to generate context-aware, document-grounded responses with multi-personality interaction support.",
 
@@ -43,12 +60,21 @@ tags: [
 link: "https://github.com/GAURAV0440/AI_Assistant"
   },
   {
-    title: "AI Interviewer System",
-    description: "Developed an LLM-based interview platform with adaptive questioning and multi-dimensional candidate evaluation.",
-    features: ["Adaptive questioning flow", "Scoring pipeline (correctness, depth, clarity)", "Stateful agent workflow"],
-    tags: ["Python", "FastAPI", "LLM APIs", "Prompt Orchestration"],
-    link: "https://github.com/GAURAV0440",
-  },
+  title: "AI Language Learning Chatbot",
+
+  description: "Built a conversational AI chatbot to assist language learning through interactive dialogue, grammar correction, and contextual response generation.",
+
+  features: [
+    "Designed conversational workflows for real-time language practice and feedback",
+    "Implemented NLP-based intent understanding and response generation",
+    "Integrated grammar correction and contextual suggestions for improved learning",
+    "Developed interactive interface for continuous user engagement and learning tracking"
+  ],
+
+  tags: ["Python", "NLP", "LLMs", "Chatbot Systems", "Streamlit"],
+
+  link: "https://github.com/GAURAV0440/AI_Language_Learning_Chatbot"
+},
 ];
 
 const ProjectsSection = () => {

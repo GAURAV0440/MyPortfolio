@@ -8,8 +8,12 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailto = `mailto:gauravchawla147@gmail.com?subject=Portfolio Contact from ${form.name}&body=${encodeURIComponent(form.message)}%0A%0AFrom: ${form.email}`;
-    window.open(mailto);
+    const subject = encodeURIComponent(`Portfolio Contact from ${form.name}`);
+    const body = encodeURIComponent(`${form.message}\n\nFrom: ${form.email}`);
+    const mailto = `mailto:gauravchawla147@gmail.com?subject=${subject}&body=${body}`;
+
+    // Using location.href is more reliable than window.open for mailto links.
+    window.location.href = mailto;
   };
 
   return (
@@ -97,7 +101,12 @@ const ContactSection = () => {
             >
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="#" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm text-foreground hover:border-primary/50 transition-colors">
+            <a
+              href="https://drive.google.com/file/d/1mEUbkMWG6QWRP7FAZ2PrOAC7sS5wWayM/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm text-foreground hover:border-primary/50 transition-colors"
+            >
               <Download className="w-4 h-4" />
               Download Resume
             </a>

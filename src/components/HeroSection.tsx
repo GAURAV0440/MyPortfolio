@@ -19,13 +19,26 @@ const HeroSection = () => {
             Gaurav Chawla
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-lg">
-            Building{" "}
-            <span className="text-primary font-semibold">Agentic AI Systems</span>{" "}
-            and{" "}
-            <span className="text-accent font-semibold">Scalable LLM Architectures</span>.{" "}
-            Focused on multi-agent orchestration, backend AI pipelines, and production-grade reasoning systems.
-          </p>
+          <div className="max-w-lg space-y-2 text-lg md:text-xl text-muted-foreground leading-relaxed">
+            <p>
+              AI Engineer focused on{" "}
+              <span className="text-primary font-semibold">Generative AI</span>{" "}
+              and{" "}
+              <span className="text-accent font-semibold">Python backend development</span>.{" "}
+              Experienced in building LLM-based applications using RAG, FastAPI, and scalable AI workflows.
+            </p>
+            <p>
+              I work on developing{" "}
+              <span className="text-primary font-semibold">practical, production-ready AI systems</span>{" "}
+              by combining{" "}
+              <span className="text-accent font-semibold">machine learning</span>{" "}
+              with backend engineering.
+            </p>
+            <p className="text-2xl md:text-3xl font-bold leading-snug text-foreground pt-1">
+              I am <span className="text-primary">Great</span> at what I{" "}
+              <span className="text-accent">do</span>.
+            </p>
+          </div>
 
           <div className="flex flex-wrap gap-3 pt-2">
             <a
@@ -36,7 +49,9 @@ const HeroSection = () => {
               Contact Me
             </a>
             <a
-              href="#"
+              href="https://drive.google.com/file/d/1mEUbkMWG6QWRP7FAZ2PrOAC7sS5wWayM/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-border bg-card text-foreground font-medium hover:border-primary/50 transition-all duration-200"
             >
               <Download className="w-4 h-4" />

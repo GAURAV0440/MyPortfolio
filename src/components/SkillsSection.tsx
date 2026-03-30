@@ -1,17 +1,55 @@
 const row1 = [
-  "Multi-Agent Systems", "Agent Communication", "LLM Orchestration", "Prompt Pipelines",
-  "RAG Pipelines", "LLM Evaluation", "Function Calling", "Autonomous Task Planning", "Reasoning Systems",
+  "Multi-Agent Systems",
+  "Agent Communication",
+  "LLM Orchestration",
+  "Prompt Engineering",
+  "RAG Pipelines",
+  "LLM Evaluation",
+  "Function Calling",
+  "Autonomous Task Planning",
+  "Reasoning Systems",
+  "State Management",
 ];
 
 const row2 = [
-  "LangChain", "LangGraph", "LangSmith", "HuggingFace Transformers", "LLaMA", "GPT APIs",
-  "PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy",
+  "Python",
+  "Machine Learning",
+  "Deep Learning",
+  "PyTorch",
+  "TensorFlow",
+  "Scikit-learn",
+  "Pandas",
+  "NumPy",
+  "Data Structures & Algorithms",
+  "LangChain",
+  "LangGraph",
+  "LangSmith",
+  "HuggingFace Transformers",
+  "LLaMA",
+  "GPT APIs",
 ];
 
 const row3 = [
-  "FastAPI", "REST APIs", "Webhooks", "Async Processing", "Event-Driven Architecture",
-  "MySQL", "PostgreSQL", "FAISS", "ChromaDB", "Neo4j",
-  "Docker", "AWS (EC2, S3)", "Git", "Linux", "CI/CD",
+  "FastAPI",
+  "Django",
+  "Flask",
+  "REST APIs",
+  "API Integration",
+  "Webhooks",
+  "Async Processing",
+  "Event-Driven Architecture",
+  "Microservices",
+  "MySQL",
+  "PostgreSQL",
+  "FAISS",
+  "ChromaDB",
+  "Neo4j",
+  "Docker",
+  "AWS (EC2, S3)",
+  "Git",
+  "Linux",
+  "CI/CD",
+
 ];
 
 const SkillPill = ({ label }: { label: string }) => (
