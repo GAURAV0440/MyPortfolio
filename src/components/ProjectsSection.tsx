@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, ArrowRight } from "lucide-react";
 
 interface Project {
   title: string;
@@ -11,17 +11,24 @@ interface Project {
 const projects: Project[] = [
   {
     title: "Multi-Agent Knowledge Graph Search Engine",
-    description: "Engineered an autonomous multi-agent search system with specialized AI architecture including web-scraping agents and a Knowledge Graph Builder Agent.",
-    features: ["Agent-to-agent communication", "Intelligent task execution", "Knowledge graph + LLM reasoning"],
-    tags: ["Python", "LangChain", "Neo4j", "ChromaDB", "Gemini-Pro"],
-    link: "#",
+    description: "Engineered an autonomous multi-agent search system with specialized AI architecture for intelligent knowledge discovery.",
+    features: ["Agent-to-agent communication", "Knowledge graph + LLM reasoning", "Autonomous task execution"],
+    tags: ["Python", "LangChain", "Neo4j", "ChromaDB", "Gemini API"],
+    link: "https://github.com/GAURAV0440",
   },
   {
     title: "AI Chatbot (RAG System)",
-    description: "Built a retrieval-augmented generation chatbot with a robust reasoning pipeline, combining vector search with LLM-powered answer synthesis.",
-    features: ["FAISS vector embeddings", "Context-aware retrieval", "FastAPI backend"],
-    tags: ["Python", "FAISS", "FastAPI", "HuggingFace", "RAG"],
-    link: "#",
+    description: "Built a retrieval-augmented generation chatbot combining vector search with LLM-powered answer synthesis for context-aware responses.",
+    features: ["RAG pipeline using embeddings", "FAISS vector search", "FastAPI real-time backend"],
+    tags: ["Python", "FastAPI", "FAISS", "HuggingFace", "RAG"],
+    link: "https://github.com/GAURAV0440",
+  },
+  {
+    title: "AI Interviewer System",
+    description: "Developed an LLM-based interview platform with adaptive questioning and multi-dimensional candidate evaluation.",
+    features: ["Adaptive questioning flow", "Scoring pipeline (correctness, depth, clarity)", "Stateful agent workflow"],
+    tags: ["Python", "FastAPI", "LLM APIs", "Prompt Orchestration"],
+    link: "https://github.com/GAURAV0440",
   },
 ];
 
@@ -36,46 +43,63 @@ const ProjectsSection = () => {
           <p className="mt-4 text-muted-foreground">Innovative AI solutions with real-world impact</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {projects.map((project) => (
             <div
               key={project.title}
-              className="glass-card p-6 group hover:-translate-y-1 hover:border-primary/40 transition-all duration-300"
+              className="glass-card p-6 group hover:-translate-y-2 hover:border-primary/40 hover:shadow-[0_0_30px_hsl(239_84%_67%/0.15)] transition-all duration-300 ease-out flex flex-col"
             >
               <div className="flex items-start justify-between mb-4">
                 <h3 className="font-display font-bold text-foreground text-lg leading-snug pr-4">
                   {project.title}
                 </h3>
                 {project.link && (
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors flex-shrink-0">
-                    <ExternalLink className="w-5 h-5" />
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-colors flex-shrink-0 p-1 rounded-lg hover:bg-primary/10"
+                  >
+                    <ExternalLink className="w-4 h-4" />
                   </a>
                 )}
               </div>
 
-              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed line-clamp-3">{project.description}</p>
 
-              <div className="mb-4">
+              <div className="mb-4 flex-1">
                 <p className="text-xs font-semibold text-foreground mb-2">Key Features:</p>
-                <ul className="space-y-1">
+                <ul className="space-y-1.5">
                   {project.features.map((f) => (
-                    <li key={f} className="text-xs text-muted-foreground flex items-center gap-2">
-                      <span className="w-1 h-1 rounded-full bg-accent" />
+                    <li key={f} className="text-xs text-muted-foreground flex items-start gap-2">
+                      <span className="w-1 h-1 rounded-full bg-accent mt-1.5 flex-shrink-0" />
                       {f}
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5 pt-2 border-t border-border/30">
                 {project.tags.map((tag) => (
-                  <span key={tag} className="text-xs px-2.5 py-1 rounded-full border border-border bg-secondary/50 text-muted-foreground">
+                  <span key={tag} className="text-[11px] px-2 py-0.5 rounded-full border border-border bg-secondary/50 text-muted-foreground">
                     {tag}
                   </span>
                 ))}
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-10">
+          <a
+            href="https://github.com/GAURAV0440"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-primary/50 text-primary font-medium text-sm hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-300"
+          >
+            View More Projects
+            <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
       </div>
     </section>
