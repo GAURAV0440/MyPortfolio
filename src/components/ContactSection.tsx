@@ -102,7 +102,7 @@ const ContactSection = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="https://drive.google.com/file/d/1mEUbkMWG6QWRP7FAZ2PrOAC7sS5wWayM/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Cpf1g6oXIyfQPIOdLL9C7ctWjFGoIuO3/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm text-foreground hover:border-primary/50 transition-colors"

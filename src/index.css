@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&f[]=satoshi@500,700,900&f[]=general-sans@500,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -115,6 +116,29 @@
   .section-padding {
     @apply py-20 md:py-28 px-4 md:px-8;
   }
+
+  .name-brand {
+    font-family: "General Sans", "Satoshi", "Inter Tight", "Space Grotesk", "Inter", sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.022em;
+    line-height: 0.98;
+    background-image: linear-gradient(110deg, #b79bff 0%, #7ca4ff 45%, #64d8ff 100%);
+    background-size: 160% 160%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow:
+      0 0 18px rgba(124, 164, 255, 0.2),
+      0 0 36px rgba(100, 216, 255, 0.1);
+  }
+
+  .name-brand:hover {
+    animation: gradient-shift 1.6s ease-in-out infinite alternate;
+  }
+
+  .animate-name-reveal {
+    animation: name-reveal 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
 }
 
 /* Marquee animation */
@@ -148,6 +172,28 @@ html {
 .timeline-line {
   @apply absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2;
   background: linear-gradient(to bottom, transparent, hsl(var(--primary)), hsl(var(--accent)), transparent);
+}
+
+@keyframes name-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 @media (max-width: 768px) {

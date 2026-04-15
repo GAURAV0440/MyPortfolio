@@ -32,7 +32,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="https://drive.google.com/file/d/1mEUbkMWG6QWRP7FAZ2PrOAC7sS5wWayM/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Cpf1g6oXIyfQPIOdLL9C7ctWjFGoIuO3/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"

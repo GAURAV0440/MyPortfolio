@@ -12,31 +12,24 @@ const HeroSection = () => {
         <div className="space-y-6">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            AI Engineer
+            AI Systems Engineer • Freelancer
           </div>
 
-          <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground leading-tight">
+          <h1 className="name-brand animate-name-reveal text-5xl md:text-6xl lg:text-[4.25rem] tracking-[-0.02em]">
             Gaurav Chawla
           </h1>
 
-          <div className="max-w-lg space-y-2 text-lg md:text-xl text-muted-foreground leading-relaxed">
-            <p>
-              AI Engineer focused on{" "}
-              <span className="text-primary font-semibold">Generative AI</span>{" "}
-              and{" "}
-              <span className="text-accent font-semibold">Python backend development</span>.{" "}
-              Experienced in building LLM-based applications using RAG, FastAPI, and scalable AI workflows.
+          <div className="max-w-xl text-muted-foreground leading-relaxed">
+            <p className="mt-2 text-xl md:text-2xl text-foreground font-semibold leading-snug">
+              I build <span className="text-primary">production-grade AI systems</span> that <span className="text-accent">scale</span> and solve <span className="text-primary">real-world problems</span>.
             </p>
-            <p>
-              I work on developing{" "}
-              <span className="text-primary font-semibold">practical, production-ready AI systems</span>{" "}
-              by combining{" "}
-              <span className="text-accent font-semibold">machine learning</span>{" "}
-              with backend engineering.
+
+            <p className="mt-4 text-base md:text-lg">
+              Focused on LLM orchestration, multi-agent systems and real-time AI pipelines combining machine learning with backend engineering to build reliable, scalable products.
             </p>
-            <p className="text-2xl md:text-3xl font-bold leading-snug text-foreground pt-1">
-              I am <span className="text-primary">Great</span> at what I{" "}
-              <span className="text-accent">do</span>.
+
+            <p className="mt-7 text-2xl md:text-3xl font-bold leading-snug text-gradient">
+              I build systems that scale not just models that run.
             </p>
           </div>
 
@@ -49,7 +42,7 @@ const HeroSection = () => {
               Contact Me
             </a>
             <a
-              href="https://drive.google.com/file/d/1mEUbkMWG6QWRP7FAZ2PrOAC7sS5wWayM/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Cpf1g6oXIyfQPIOdLL9C7ctWjFGoIuO3/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-border bg-card text-foreground font-medium hover:border-primary/50 transition-all duration-200"
