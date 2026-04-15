@@ -10,9 +10,17 @@ const HeroSection = () => {
       <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left */}
         <div className="space-y-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium">
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            AI Systems Engineer • Freelancer
+          <div className="group inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-[13px] md:text-sm font-medium tracking-wide text-slate-100 bg-gradient-to-r from-[#111a36]/85 via-[#1a1f4f]/80 to-[#2a2358]/80 backdrop-blur-md border border-cyan-300/30 shadow-[0_0_0_1px_rgba(125,211,252,0.18),0_0_26px_rgba(56,189,248,0.16)] hover:shadow-[0_0_0_1px_rgba(125,211,252,0.34),0_0_34px_rgba(99,102,241,0.24)] hover:scale-[1.03] transition-all duration-300">
+            <span className="relative inline-flex h-2.5 w-2.5 items-center justify-center">
+              <span className="absolute inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400 animate-ping opacity-80" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-300 shadow-[0_0_10px_rgba(74,222,128,0.85)]" />
+            </span>
+            <span>AI Systems Engineer</span>
+            <span className="relative inline-flex h-2.5 w-2.5 items-center justify-center">
+              <span className="absolute inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400 animate-ping opacity-80" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-300 shadow-[0_0_10px_rgba(74,222,128,0.85)]" />
+            </span>
+            <span>Freelancer</span>
           </div>
 
           <h1 className="name-brand animate-name-reveal text-5xl md:text-6xl lg:text-[4.25rem] tracking-[-0.02em]">
@@ -24,9 +32,19 @@ const HeroSection = () => {
               I build <span className="text-primary">production-grade AI systems</span> that <span className="text-accent">scale</span> and solve <span className="text-primary">real-world problems</span>.
             </p>
 
-            <p className="mt-4 text-base md:text-lg">
-              Focused on LLM orchestration, multi-agent systems and real-time AI pipelines combining machine learning with backend engineering to build reliable, scalable products.
-            </p>
+            <div className="relative mt-4">
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute -left-4 -top-3 h-10 w-24 rounded-full border border-primary/35 rotate-[-18deg] blur-[0.2px]"
+              />
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute -right-6 -bottom-4 h-10 w-28 rounded-full border border-accent/35 rotate-[14deg]"
+              />
+              <p className="relative z-10 text-base md:text-lg text-foreground/95 font-medium">
+                Focused on LLM orchestration, multi-agent systems and real-time AI pipelines combining machine learning with backend engineering to build reliable, scalable products.
+              </p>
+            </div>
 
             <p className="mt-7 text-2xl md:text-3xl font-bold leading-snug text-gradient">
               I build systems that scale not just models that run.
