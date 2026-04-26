@@ -15,7 +15,7 @@ const HeroSection = () => {
               <span className="absolute inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400 animate-ping opacity-80" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-300 shadow-[0_0_10px_rgba(74,222,128,0.85)]" />
             </span>
-            <span>AI Systems Engineer</span>
+            <span>AI Engineer</span>
             <span className="relative inline-flex h-2.5 w-2.5 items-center justify-center">
               <span className="absolute inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400 animate-ping opacity-80" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-300 shadow-[0_0_10px_rgba(74,222,128,0.85)]" />
